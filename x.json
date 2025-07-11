@@ -1,0 +1,7 @@
+{
+  "users": [
+    { "id": 1, "name": "Alice", "profile": { "age": 25, "active": true } },
+    { "id": 2, "name": "Bob", "profile": { "age": 30, "active": false } }
+  ],
+  "admins": [1, 2]
+}
