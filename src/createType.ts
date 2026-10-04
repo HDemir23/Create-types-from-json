@@ -1,4 +1,3 @@
-// json-to-types.ts
 // CLI tool that reads a JSON file, infers its structure, and generates TypeScript types
 
 import * as fs from "fs";

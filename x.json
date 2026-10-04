@@ -1,7 +1,61 @@
 {
   "users": [
-    { "id": 1, "name": "Alice", "profile": { "age": 25, "active": true } },
-    { "id": 2, "name": "Bob", "profile": { "age": 30, "active": false } }
+    {
+      "id": 1,
+      "name": "Alice",
+      "email": "alice@example.com",
+      "isActive": true,
+      "roles": ["admin", "editor"],
+      "profile": {
+        "age": 28,
+        "address": {
+          "street": "123 Main St",
+          "city": "Metropolis",
+          "postalCode": "12345"
+        },
+        "phoneNumbers": ["+1234567890", "+0987654321"]
+      },
+      "lastLogin": null,
+      "metadata": {
+        "signupDate": "2023-12-01T10:00:00Z",
+        "referrer": null
+      }
+    },
+    {
+      "id": 2,
+      "name": "Bob",
+      "email": "bob@example.com",
+      "isActive": false,
+      "roles": [],
+      "profile": {
+        "age": 35,
+        "address": {
+          "street": "456 Side St",
+          "city": "Gotham",
+          "postalCode": null
+        },
+        "phoneNumbers": []
+      },
+      "lastLogin": "2024-01-15T12:30:00Z",
+      "metadata": {
+        "signupDate": "2023-11-20T14:15:00Z",
+        "referrer": "Twitter"
+      }
+    }
   ],
-  "admins": [1, 2]
+  "config": {
+    "theme": "dark",
+    "features": {
+      "beta": true,
+      "newDashboard": false
+    },
+    "limits": {
+      "maxUsers": 1000,
+      "maxStorageGb": 50.5
+    }
+  },
+  "logs": [],
+  "version": "2.1.0",
+  "releaseDate": "2024-04-01",
+  "deprecated": false
 }
